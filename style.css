@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
     /* padding: 100px; */
 }
 
@@ -12,13 +13,18 @@ body {
     display: flex;
     width: 700px;
     border-radius: 15px;
-    position: relative;
-    flex-shrink: none;
+    flex-shrink: 0;
+    padding: 70px 70px 70px 0;
+    position: absolute;
     /* gap: 50px; */
 }
 
 .img-container {
     width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: lightpink; */
 }
 
 .img-container img {
@@ -26,28 +32,41 @@ body {
 }
 
 .woman-img {
-    width: 50%;
-    left: -57px;
-    top: 70px;
+    width: 100%;
+    top: 0;
+    left: -100px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 400;
 }
 
 .pattern-img {
-    width: 100%;
-    left: -400px;
-    top: -200px;
+    width: 200%;
+    top: -100px;
+    right: 0;
+    left: -450px;
+    bottom: 0;
+    margin: auto;
+    z-index: 0;
 }
 
 .box-img {
+
     width: 150px;
-    left: -78px;
-    top: 165px;
+    top: 75px;
+    right: 0;
+    left: -345px;
+    bottom: 0;
+    margin: auto;
+    z-index: 500;
 }
 
 .info-container {
     width: 50%;
     display: grid;
     gap: 13px;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .p1 {
@@ -68,7 +87,8 @@ body {
     gap: 0px;
     padding-bottom: 13px;
     border-bottom: 1px solid hsl(240, 5%, 91%);
-    flex-shrink: none;
+    flex-shrink: 0;
+    cursor: pointer;
 }
 
 .arrow-conatiner {
