@@ -10,8 +10,6 @@
         <link rel="stylesheet" href="style.css">
 
         <title>FAQ</title>
-
-        <script src="src.js"></script>
     </head>
     <body>
         <div class="container">
@@ -31,39 +29,48 @@
             <div class="info-container">
                 <h1>FAQ</h1>
                 <div class="qa-container">
-                    <div class="question-container" id="q1">
+                    <div class="question-container" onclick="showHideAnswer('a1')">
                         How many team members can I invite?
-                        <img class="arrow-img" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow">    
+                        <img id="a11" class="arrow-img" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow">
+                        <div id="a111"></div>
                     </div>
                 </div>
                 <div class="qa-container">
-                    <div class="question-container" id="q2">
+                    <div class="question-container" onclick="showHideAnswer('a2')">
                         What is the maximum file upload size?
-                        <img class="arrow-img" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow">
-                        <p class="a">No more than 2GB. All files in your
-                            account must fit your allotted storage space.
-                        </p>
+                        <img id="a22" class="arrow-img" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow">
+                        <div id="a222">
+                            <!-- <p class="a">No more than 2GB. All files in your
+                                account must fit your allotted storage space.
+                            </p> -->
+                        </div>
                     </div>
                 </div>
                 <div class="qa-container">
-                    <div class="question-container" id="q3">
+                    <div class="question-container" onclick="showHideAnswer('a3')">
                         How do I reset my password?
-                        <img class="arrow-img" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow">    
+                        <img id="a33" class="arrow-img" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow">  
+                        <div id="a333"></div>  
                     </div>
                 </div>
                 <div class="qa-container">
-                    <div class="question-container" id="q4">
+                    <div class="question-container" onclick="showHideAnswer('a4')">
                         Can I cancel my subscription?
-                        <img class="arrow-img" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow">    
+                        <img id="a44" class="arrow-img" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow">
+                        <div id="a444"></div>
                     </div>
                 </div>
                 <div class="qa-container">
-                    <div class="question-container" id="q5">
+                    <div class="question-container" onclick="showHideAnswer('a5')">
                         Do you provide additional support?
-                        <img class="arrow-img" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow">    
+                        <img id="a55" class="arrow-img" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow">
+                        <div id="a555"></div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="src.js"></script>
+
     </body>
 </html>
