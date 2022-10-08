@@ -107,6 +107,7 @@ h1, p, div {
     color: hsl(240, 6%, 50%);
     margin-top: 12px;
     line-height: 16px;
+    font-weight: normal;
 }
 
 .info-container img {
