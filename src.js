@@ -23,6 +23,9 @@ const turnBold = (id, flag) => {
         document.getElementById(id).style.color = 'hsl(238, 29%, 16%)';
         return;
     }
+    if (window.screen.width <= 800 || window.innerWidth <= 800){
+        document.getElementById(id).style.color = 'hsl(240, 6%, 50%)';
+    }
     document.getElementById(id).style.fontWeight = '400';
 }
 
