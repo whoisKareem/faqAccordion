@@ -13,16 +13,24 @@
     </head>
     <body>
         <div class="container">
-            <div class="box-container">
-                <picture>
-                    <img src="./faq-accordion-card-main/images/illustration-box-desktop.svg" alt="box">
-                </picture>
-            </div>
+            <picture>
+                <img class="img-box" src="./faq-accordion-card-main/images/illustration-box-desktop.svg" alt="box">
+            </picture>
             <div class="img-container">
                 <picture>
+                    <source media="(min-width: 601px)"
+                            srcset="./faq-accordion-card-main/images/illustration-woman-online-desktop.svg">
+                    
+                    <source srcset="./faq-accordion-card-main/images/illustration-woman-online-mobile.svg">
+
                     <img class="img-woman" src="./faq-accordion-card-main/images/illustration-woman-online-desktop.svg" alt="woman">
                 </picture>
                 <picture>
+                    <source media="(min-width: 601px)"
+                            srcset="./faq-accordion-card-main/images/bg-pattern-desktop.svg">
+                    
+                    <source srcset="./faq-accordion-card-main/images/bg-pattern-mobile.svg">
+
                     <img class="img-pattern" src="./faq-accordion-card-main/images/bg-pattern-desktop.svg" alt="pattern">
                 </picture>
             </div>
